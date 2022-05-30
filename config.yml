@@ -1,0 +1,9 @@
+language: "en"
+
+pipeline:
+  - name: "SpacyNLP"                   # loads the spacy language model
+  - name: "SpacyTokenizer"             # splits the sentence into tokens
+  - name: "CRFEntityExtractor"                     # uses the pretrained spacy NER model
+  - name: "SpacyFeaturizer"     # transform the sentence into a vector representation
+  - name: "SklearnIntentClassifier"   # uses the vector representation to classify using SVM
+  - name: "EntitySynonymMapper"                # trains the synonyms

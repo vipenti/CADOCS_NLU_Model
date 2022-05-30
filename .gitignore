@@ -25,6 +25,13 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.idea
+_pycache_
+default
+Include
+Lib
+Scripts
+
 MANIFEST
 
 # PyInstaller
