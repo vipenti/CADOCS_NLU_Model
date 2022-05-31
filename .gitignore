@@ -27,7 +27,6 @@ share/python-wheels/
 *.egg
 .idea
 _pycache_
-default
 Include
 Lib
 Scripts
