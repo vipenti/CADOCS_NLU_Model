@@ -24,10 +24,19 @@ def predict():
 
     return json.dumps(result)
 
+# Gets a new message with the corresponding intent, and add it as a new row to the existing dataset
+# If enough items have been added, the model re-trains
 @app.route('/update_dataset', methods=['GET'])
 def update_dataset():
-    # Gets a new message with the corresponding intent, and add it as a new row to the existing dataset
-    # If enough items have been added, the model re-trains
+    if 'message' in request.args and 'intent' in request.args:
+        message = str(request.args['message'])
+        intent = str(request.args['intent'])
+    else:
+        return "Error: The past message or intent is incorrect. Please provide the right parameters."
+
+    model = CADOCS.CADOCSModel()
+    model.update_dataset(message, intent)
+
     return
 
 app.run()

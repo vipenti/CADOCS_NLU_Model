@@ -18,13 +18,23 @@
 - I'd like to understand why contributors of LINK don't work well
 - CAD show me the community smells in this repo LINK
 - Hey Cadocs, which are the community smells in the LINK project?
-- "CADOCS, which community smells are present here LINK?"
+- CADOCS, which community smells are present here LINK?
 - Hi CADOCS, find community smells in the LINK project
 - Tell me all the community smells in this repo LINK
 - hello , what are the main community smells in the LINK project ?
 - Hey, can you scan this LINK for me?
 - Hey CADOCS, which community smells are in the LINK project?
 - CADOCS, search for smells in the LINK repo
+- hi, what are the community smells in the LINK project
+- Hey CADOCS, can you tell which community smells are present in the repository LINK please? 
+- Hi CADOCS, wich community are present in this repository LINK?
+- Hi, do you know what are the community smells in LINK repo?
+- hi, are there community smells in the LINK project??
+- Hey CADOCS, what are the community smells in the repository LINK please? 
+- Hello CADOCS, can you tell which community smells are present in the repository LINK please?
+- Hey CADOCS, could you check if the repository at this LINK has community smells please?
+- Hi CADOCS, could you check which community smells are present in the LINK project?
+- What are the community smells in the LINK project?
 ## intent: get_smells_date
 - Hello CADOCS, you tell which community smells are present in the repository LINK after 03/21/2019?
 - Hey CADOCS,  tell which community smells are present in the repository LINK after 03/23/2019
@@ -52,6 +62,16 @@
 - Hi, what are the smells in this repository LINK starting from 05/06/2017?
 - Hey CADOCS, which community smells are in the LINK project After 10/10/2020?
 - CADOCS, search for smells in the LINK repo after 08/08/2018
+- hi, what are the community smells in the LINK project starting from 12/19/2021??
+- Hi, what are the community smells in the LINK Project starting from 12/19/2021?
+- Hi CADOCS witch community smells are in this repository LINK from 05/06/2022
+- Hi, i need all the community smells in LINK project after 31/12/2000
+-  can you tell which community smells are present in the repository LINK defore 03/23/2020?
+- Hey CADOCS, what are the community smells in the repository LINK project starting from 26/11/1999? 
+- Hello, what are the community smells in the LINK project date 12/12/20? Thanks in advance
+- Hey CADOCS, could you check if the repository at this LINK has community smells, starting from 01/05/2020 please?
+- hi CADOCS, could you check which smells of the community are present in the LINK project starting from 22/02/2020
+- What are the community smells in the LINK project after 03/04/2020?
 ## intent: report
 - Hello CADOCS, I need a report of your last execution
 - Hey CADOCS, give me a report of your last execution
@@ -79,6 +99,16 @@
 - Show me your last smell detection
 - Hey CADOCS, report your last execution
 - CADOCS, report
+- hello, show me information about your last execution.
+- I need a report if your last execution please
+- Hi CADOCS give me the report of last execution
+- Hi, show me last execution report
+- I, tell me somethings  about your last execution
+- Hey CADOCS, I need a report of your last execution please 
+- Hello, i need a report of your last task execution. Thanks in advance
+- hello CADOCS, please give me a report about your last execution!
+- Could you give me a report on your last execution?
+- Give me a report of your lady execution.
 ## intent: info
 - Hello CADOCS, what kind of community smells can you detect?
 - Hey CADOCS, what kind of community smells can you detect?
@@ -106,3 +136,13 @@
 - Tell me more about community smells
 - Hey CADOCS, tell me more about community smells
 - CADOCS whay kind of smells can you detect?
+- hey CADOCS i wanna know more about community smells
+- What kind of community smells can you detect? 
+- Hi CADOCS show me all kind of community you detect
+- Hi, do you know what are community smells?
+- hey CADOCS tell me somethings  about community smells
+- Hey CADOCS, what kind of community smells can you detect? 
+- I wanna know more about community smells, it seems interesting
+- hey CADOCS, can you show me some informations about community smells that you can detect?
+- Could you tell me more about community smells and which ones you can detect?
+- CADOCS, What community smells have you detected?
