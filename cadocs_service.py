@@ -5,6 +5,7 @@ import json
 from flask import request
 
 app = flask.Flask(__name__)
+model = CADOCS.CADOCSModel()
 
 @app.route('/predict', methods=['GET'])
 def predict():
@@ -19,7 +20,6 @@ def predict():
     if ck_url:
         message = message.replace([i[0] for i in ck_url][0], "LINK")
 
-    model = CADOCS.CADOCSModel()
     result = {"intent": model.give_prediction(message), "entities": ck_url}
 
     return json.dumps(result)
@@ -34,7 +34,6 @@ def update_dataset():
     else:
         return "Error: The past message or intent is incorrect. Please provide the right parameters."
 
-    model = CADOCS.CADOCSModel()
     model.update_dataset(message, intent)
 
     return

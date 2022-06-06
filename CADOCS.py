@@ -139,3 +139,5 @@ class CADOCSModel:
 
 if __name__ == "__main__":
     model = CADOCSModel()
+    res = model.give_prediction("hello CADOCS, show me the community smells in the repository https://github.com/tensorflow/ranking from 21/05/2020")
+    print(res)
