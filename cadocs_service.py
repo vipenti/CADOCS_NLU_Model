@@ -34,8 +34,12 @@ def update_dataset():
     else:
         return "Error: The past message or intent is incorrect. Please provide the right parameters."
 
+    re_equ = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    ck_url = re.findall(re_equ, message)
+    if ck_url:
+        message = message.replace([i[0] for i in ck_url][0], "LINK")
     model.update_dataset(message, intent)
 
-    return
+    return json.dumps({"ok":True})
 
 app.run()
