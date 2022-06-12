@@ -133,7 +133,7 @@ class CADOCSModel:
         # When the value of TO_RETRAIN is equal to the UPDATE_COUNT one, the latter is reset and the model is trained again
         if (self.TO_RETRAIN == self.UPDATE_COUNT):
             self.UPDATE_COUNT = 0
-            self.train_model(self)
+            self.train_model()
         return
 
 

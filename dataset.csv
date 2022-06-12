@@ -142,6 +142,3 @@ I wanna know more about community smells, it seems interesting;info
 hey CADOCS, can you show me some informations about community smells that you can detect?;info
 Could you tell me more about community smells and which ones you can detect?;info
 CADOCS, What community smells have you detected?;info
-CADOCS can you tell which community smells are present in the <LINK>;get_smells
-give me the community smells in the repository <LINK>;get_smells
-hi cadocs, can you give me community smells in <LINK>;get_smells
