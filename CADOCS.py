@@ -61,7 +61,7 @@ class CADOCSModel:
             for q in int4:
                 f.write(f"- {q}\n")
 
-    # Created an MarkDown file containing the testing data
+    '''# Created an MarkDown file containing the testing data
     def create_test_data_md(self):
         qs1 = df[2][27:]
         qs2 = df[3][27:]
@@ -80,7 +80,7 @@ class CADOCSModel:
             f.write("## intent: info\n")
             for q in qs4:
                 f.write(f"- {q}\n")
-
+    '''
     # This function it is where the training of the model takes place
     def train_model(self):
         # It creates the training and the testing data from the dataset
