@@ -76,7 +76,7 @@ In case you faced some error installing the Anaconda environment, please proceed
     - python -m spacy download en_core_web_md
     - python -m spacy link en_core_web_md en
  
- - Step 3: Use our Model!
+- Step 3: Use our Model!
   - Open the project on your system with the IDE you prefer (__We suggest using Visual Studio Code or PyCharm__)
   - Activate the python environment created in the Step 1 and run the module *cadocs_service.py*
 
