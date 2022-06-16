@@ -18,10 +18,10 @@ Specifically, this is the repository containing the Natural Language Understandi
 
 The main elements of the repository are described below:
 
-- CADOCS.py: [inserire testo]
-- cadocs_service.py: [inserire testo]
-- dataset.csv: [inserire testo]
-- default/current: [inserire testo]
+- CADOCS.py: This module is responsible to create the NLU model through the given dataset and to make predictions with it
+- cadocs_service.py: This is the web services that exposes the model functionalities through HTTP requests
+- dataset.csv: This is the dataset we used to train the model, built with a survey
+- default/current: This is the actual model that CADOCS uses to make predictions
 
 ## Other Tools
 
@@ -48,13 +48,42 @@ List of authors:
 
 #### Requirements
 
-- item 1
-- item 2
+- Anaconda 3 - 2022.05 - 64bit
+- Windows 10
+- Microsoft Visual C++ Build Tools 14.0 or higher (In order to run Anaconda) 
+- (Optional, if you won't use Anaconda to install it) Python 3.7.13 
 
 #### Installation Steps
 
-- step 1
-- step 2
+- Step 1: Local installation of the NLU service (Recommended, using Anaconda)
+  - Clone the current repository on your system
+  - In our repository, find the *cadocs_NLU_env.yaml* file which contains the environment and the dependencies needed
+  - Through the Anaconda Powershell, run the following command: *conda env create -f ENV_FILE_NAME.yaml*
+
+In case you faced some error installing the Anaconda environment, please proceed with the Step 1.1
+
+- (Optional) Step 1.1: Local installation of the NLU service (Manual)
+  - Clone the current repository on your system
+  - In our repository, find the *cadocs_NLU_env.yaml* file which contains the environment and the dependencies needed
+  - Create a new Python 3.7.13 environment
+  - Within the previously mentioned file, you will find each of the dependencies needed to run the tool
+  - Install by hand each of them in your env
+ 
+- Step 2: Installation of the English dictionary
+  - After having installed the environment, open an Anaconda Powershell with the admin privileges
+  - Run the following commands
+    - conda activate ENVIRONMENT_NAME
+    - python -m spacy download en_core_web_md
+    - python -m spacy link en_core_web_md en
+ 
+ - Step 3: Use our Model!
+  - Open the project on your system with the IDE you prefer (__We suggest using Visual Studio Code or PyCharm__)
+  - Activate the python environment created in the Step 1 and run the module *cadocs_service.py*
+
+- (Optional) Step 4: Test it
+  - Open your browser
+  - Make a GET request like follows: http://localhost:5000/predict?message=YOUR_MESSAGE
+
 
 ## Contributors
 
