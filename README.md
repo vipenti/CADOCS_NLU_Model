@@ -26,9 +26,9 @@ The main elements of the repository are described below:
 ## Other Tools
 
 The entire CADOCS tool is composed of three modules:
-- **CADOCS** (link): it is the Slack App used to interact with users.
+- **CADOCS** [link](https://github.com/gianwario/CADOCS): it is the Slack App used to interact with users.
 - **CADOCS_NLU_Model** (this repository): it is the ML service used to interpret the users' intents.
-- **csDetector** (link): the augmented and wrapped version of csDetector, used in our tool to detect community smells and other socio-technical metrics.
+- **csDetector** [link](https://github.com/gianwario/csDetector): the augmented and wrapped version of csDetector, used in our tool to detect community smells and other socio-technical metrics.
 
 <!--
 ## Authors
