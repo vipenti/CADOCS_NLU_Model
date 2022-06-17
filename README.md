@@ -22,7 +22,7 @@ The main elements of the repository are described below:
 - cadocs_service.py: This is the web services that exposes the model functionalities through HTTP requests
 - dataset.csv: This is the dataset we used to train the model, built with a survey
 - default/current: This is the actual model that CADOCS uses to make predictions
-- input_testing.ipynb: The Python notebook create to test the model with Input Testing. It contains an execution of the tests
+- input_testing.ipynb: The Python notebook created to test the model with Input Testing. It contains an execution of the tests
 
 ## Other Tools
 
