@@ -23,6 +23,7 @@ The main elements of the repository are described below:
 - dataset.csv: This is the dataset we used to train the model, built with a survey
 - default/current: This is the actual model that CADOCS uses to make predictions
 - input_testing.ipynb: The Python notebook created to test the model with Input Testing. It contains an execution of the tests
+- cadocs_NLU_env.yaml: The Anaconda environment containing the dependencies needed to execute the module
 
 ## Other Tools
 
