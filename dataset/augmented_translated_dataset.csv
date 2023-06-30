@@ -1,0 +1,285 @@
+request;intent
+Ciao CADOCS, potresti indicarmi i community smells presenti nel repository LINK?;get_smells
+Hey CADOCS, puoi segnalare i community smells nel repository LINK?;get_smells
+CADOCS, puoi elencare i community smells presenti nel LINK?;get_smells
+Vorrei conoscere i community smells in questo LINK.;get_smells
+Quali sono i community smells nel progetto LINK?;get_smells
+Ci sono dei community qui, LINK?;get_smells
+Trova i community smells nel repository LINK.;get_smells
+Dammi i community smells presenti nel LINK.;get_smells
+CADOCS, puoi dirmi i community smells nel progetto LINK, per favore?;get_smells
+Ehi, Community su LINK?;get_smells
+Hey CADOCS, potresti indicarmi i community smells nel progetto LINK?;get_smells
+Ciao, puoi dirmi il community smells attuale nel progetto LINK?;get_smells
+Ciao CADOCS, puoi elencarmi i community smells nel progetto LINK?;get_smells
+Puoi elencarmi i community smells nel repository LINK?;get_smells
+Ehi, quali sono i community in questo LINK repository?;get_smells
+CADOCS, mostrami i community smells presenti nella repository LINK.;get_smells
+Vorrei capire perché i collaboratori di LINK non funzionano bene.;get_smells
+CADOCS, mostrami i community smells in questo LINK.;get_smells
+Hey Cadocs, quali sono i community smells nel progetto LINK?;get_smells
+CADOCS, quali community smells sono presenti qui, LINK?;get_smells
+Ciao CADOCS, trova i community smells nel progetto LINK.;get_smells
+Dimmi tutto sui community smells in questo LINK.;get_smells
+Hello, quali sono i principali smells nel progetto LINK?;get_smells
+Ehi, puoi esaminare questo LINK?;get_smells
+Hey CADOCS, quali community smells fanno parte del progetto LINK?;get_smells
+CADOCS, cerca smells nel LINK.;get_smells
+Ciao, quali sono i community smells nel progetto LINK?;get_smells
+Hey CADOCS, puoi segnalare i community smells nel repository LINK, per favore?;get_smells
+Ciao CADOCS, quali sono i community presenti in questo repository LINK?;get_smells
+Ciao, sai quali sono i community smells nel repo LINK?;get_smells
+Ciao, ci sono dei community smells nel progetto LINK?;get_smells
+Hey CADOCS, quali sono i community smells nel repository LINK, per favore?;get_smells
+Ciao CADOCS, puoi dirmi i community smells presenti nel repository LINK, per favore?;get_smells
+Hey CADOCS, puoi verificare se il repository di questo LINK ha dei community smells, per favore?;get_smells
+Ciao CADOCS, potresti controllare quali sono i community smells presenti nel progetto LINK?;get_smells
+Quali sono i community smells nel progetto LINK?;get_smells
+Ciao CADOCS, potresti dirmi i community smells presenti nel repository LINK a partire dal 21/03/2019?;get_smells_date
+Hey CADOCS, puoi segnalare i community smells nel repository LINK dopo il 23/03/2019?;get_smells_date
+CADOCS, puoi indicare i community smells presenti nel repository LINK dopo il 01/16/2028?;get_smells_date
+Vorrei sapere cosa ha causato i community smells in questo LINK a partire da questa data MM/GG/AAAA;get_smells_date
+I community smells nel progetto LINK a partire dal 27/04/2022?;get_smells_date
+CADOCS, puoi controllare i community smells in LINK a partire dal 18/04/2010?;get_smells_date
+Cerca i community smells nel repository LINK dopo il 12/19/2021;get_smells_date
+Puoi fornirmi i community smells in LINK a partire da su?;get_smells_date
+Puoi dirmi quali sono i community smells presenti nel LINK revisionato dopo il 30/03/2021?;get_smells_date
+I community smells su LINK a partire dal 01/01/2020?;get_smells_date
+Hey CADOCS, puoi indicare i community smells presenti nel repository LINK dopo il 04/12/2016?;get_smells_date
+Ciao, puoi dirmi i community smells presenti nel progetto LINK prima del 07/07/2021?;get_smells_date
+Ciao CADOCS, puoi dirmi quali sono i community smells nel progetto LINK a partire dal 06/09/2020?;get_smells_date
+Elencami i community smells in LINK a partire dal 03/03/2020.;get_smells_date
+CADOCS, puoi elencarmi i community smells presenti in questo repository LINK a partire dal 05/01/2020?;get_smells_date
+CADOCS, mostra i community smells presenti nel repository LINK dopo il 12/19/2021.;get_smells_date
+Dal 23 giugno 2020, il team di LINK ha un comportamento strano.;get_smells_date
+CAD, mostrami i community smells in questo LINK, a partire da MM/GG/AAAA.;get_smells_date
+Hey CADOCS, quali sono i community smells nel progetto LINK dal 12/19/2021?;get_smells_date
+CADOCS, quali community smells sono presenti qui, LINK, dopo il 03/07/2022?;get_smells_date
+Ciao CADOCS, ci sono dei community smells nel progetto LINK a partire dall'11/11/2011?;get_smells_date
+Trova tutti i community smells di questo LINK, dal 05/05/2021.;get_smells_date
+Ciao CADOCS, quali sono i principali community smells nel progetto LINK dopo il 07/06/2020?;get_smells_date
+Ciao, quali sono gli smells in questo repository LINK a partire dal 05/06/2017?;get_smells_date
+Hey CADOCS, quali community smells sono presenti nel progetto LINK dopo il 10/10/2020?;get_smells_date
+CADOCS, cerca smells nel LINK, dopo l'08/08/2018.;get_smells_date
+Ciao, quali sono i community smells nel progetto LINK a partire dal 12/19/2021?;get_smells_date
+Ciao, che cosa sono i community smells nel progetto LINK a partire dal 12/19/2021?;get_smells_date
+Ciao CADOCS, quanti community smells sono presenti in questo repository LINK dal 05/06/2022?;get_smells_date
+Ciao, ho bisogno di tutti i community smells nel progetto LINK dopo il 31/12/2000.;get_smells_date
+Puoi indicare quali community smells sono presenti nel repository LINK prima del 23/03/2020?;get_smells_date
+Hey CADOCS, quali sono i community smells nel repository del progetto LINK a partire dal 26/11/1999?;get_smells_date
+Ciao, quali sono i community smells in data 12/12/20 del progetto LINK? Grazie in anticipo.;get_smells_date
+Hey CADOCS, puoi verificare se il repository di questo LINK ha dei community smells a partire dal 01/05/2020, per favore?;get_smells_date
+Ciao CADOCS, potresti controllare quali community smells sono presenti nel progetto LINK a partire dal 22/02/2020?;get_smells_date
+Quali sono i community smells nel progetto LINK dopo il 03/04/2020?;get_smells_date
+Salve CADOCS, ho bisogno di un report dell'ultima esecuzione.;report
+Hey CADOCS, puoi darmi un report della tua ultima esecuzione?;report
+Ho bisogno del numero di report per la tua ultima esecuzione, puoi fornirlo?;report
+Mostra un report sull'ultima esecuzione.;report
+Ho bisogno di un report dell'ultima esecuzione.;report
+Fammi un resoconto dell'ultima esecuzione.;report
+Dammi il resoconto dell'ultima esecuzione.;report
+Dammi un report sull'ultima esecuzione.;report
+CADOCS, puoi generare un report della tua ultima esecuzione?;report
+Ehi, qual è stata l'ultima esecuzione?;report
+Salve, potresti mostrarmi le informazioni sulla tua ultima esecuzione, per favore?;report
+Dammi la documentazione della tua ultima esecuzione, per favore.;report
+Per favore, mostra un report della tua ultima esecuzione.;report
+Dammi il report della tua ultima esecuzione.;report
+CADOCS, mostrami le informazioni sulla tua ultima esecuzione.;report
+CADOCS, mostrami i risultati della tua ultima esecuzione.;report
+Puoi fornirmi un riassunto di quanto fatto l'ultima volta?;report
+CAD, voglio un report dell'ultima esecuzione.;report
+Ehi Cadocs, mostrami la tua ultima esecuzione.;report
+Mostrami le informazioni sulla tua ultima esecuzione.;report
+Ciao CADOCS, mostrami il report della tua ultima esecuzione.;report
+Dammi il report dell'ultima esecuzione.;report
+Mostrami l'ultima esecuzione.;report
+Mostrami il tuo ultimo rilevamento di smells.;report
+Hey CADOCS, riporta la tua ultima esecuzione.;report
+CADOCS, report.;report
+Ciao, fammi vedere le informazioni sulla tua ultima esecuzione.;report
+Mi serve il numero del report della tua ultima esecuzione, per favore.;report
+CADOCS, mostrami il report dell'ultima esecuzione.;report
+Ciao, mostrami il report dell'ultima esecuzione.;report
+Io... dimmi qualcosa riguardo alla tua ultima esecuzione.;report
+Hey CADOCS, per favore, fornisci un report della tua ultima esecuzione.;report
+Salve, necessito di un report sull'ultima esecuzione, per favore.;report
+Hello CADOCS, gentilmente fornitemi un report riguardante la vostra ultima esecuzione!;report
+Potresti fornirmi un report sulla tua ultima esecuzione?;report
+Dammi un report dell'ultima esecuzione.;report
+Ciao CADOCS, quali tipi di community smells sei in grado di rilevare?;info
+Hey CADOCS, quali tipi di community smells riesci a rilevare?;info
+CADOCS, quali community smells riesci a rilevare?;info
+Voglio saperne di più sui community smells rilevati.;info
+Cosa riesci a rilevare riguardo ai community smells?;info
+Datemi i community smells rilevati.;info
+Cosa puoi fare?;info
+Puoi darmi ulteriori informazioni sui community smells che riesci a rilevare?;info
+Ehi! Che cosa sono i community smells che riesci a rilevare?;info
+Hey CADOCS, in quale ambito operi?;info
+Hey CADOCS, puoi darmi ulteriori informazioni sui community smells che riesci a rilevare?;info
+Ciao, cosa sei in grado di trovare riguardo ai community smells?;info
+CADOCS, quali tipi di community smells riesci a rilevare?;info
+CADOCS, cosa riesci a rilevare riguardo ai community smells?;info
+Cosa sono questi community smells? Come posso saperne di più sui community smells? ;info
+Cosa puoi fare per me?;info
+CAD desidero maggiori informazioni sui community smells rilevati.;info
+Hey Cadocs, parlami dei tuoi community smells.;info
+Ciao CADOCS, quali tipi di community smells sei in grado di rilevare?;info
+Che tipi di community smells riesci a rilevare?;info
+Che tipi di community smells riesci a rilevare?;info
+Dimmi di più sui community smells.;info
+Hey CADOCS, dimmi di più sui community smells.;info
+CADOCS, quali tipi di smells riesci a rilevare?;info
+Hey CADOCS, voglio saperne di più sui community smells.;info
+Che tipi di community smells riesci a rilevare?;info
+Ciao CADOCS, mostrami tutti i tipi di community smells che riesci a rilevare.;info
+Ciao, sai cosa sono i community smells?;info
+Hey CADOCS, dimmi qualcosa sui community smells.;info
+Hey CADOCS, quali tipi di community smells riesci a rilevare?;info
+Vorrei saperne di più sui community smells, sembrano interessanti.;info
+Hey CADOCS, puoi mostrarmi alcune informazioni sui community smells che riesci a rilevare?;info
+Puoi darmi ulteriori dettagli sui community smells e su quali aspetti si basano?;info
+CADOCS, quali community smells hai rilevato?;info
+Ciao CADOCS, puoi dirmi quali community smells sono presenti nel repository LINK, per favore?;get_smells
+Ci sono dei community smells qui, LINK?;get_smells
+I community smells presenti nel repository LINK.;get_smells
+CADOCS, puoi dirmi quali community smells sono presenti nel progetto LINK, per favore?;get_smells
+Ehi, cosa c'è su LINK?;get_smells
+Hey CADOCS, potresti dirmi quali community smells sono presenti nel progetto LINK?;get_smells
+Puoi elencare tutti i community smells presenti nel repository LINK?;get_smells
+CADOCS, dimmi i community smells presenti nel repository LINK.;get_smells
+Vorrei capire gli smells di LINK;get_smells
+Vorrei capire i community di LINK;get_smells
+CADOCS smells di LINK;get_smells
+Ehi CADOCS, quali community smells sono presenti nel progetto LINK?;get_smells
+Ciao CADOCS, potresti verificare quali community smells sono presenti nel progetto LINK?;get_smells
+Ciao CADOCS, potresti controllare se ci sono community smells nel progetto LINK?;get_smells
+Salve CADOCS, potete indicare quali community smells sono presenti nel repository LINK a partire dal 21/03/2019?;get_smells_date
+Ciao CADOCS, potresti dirmi quali community smells sono presenti nel repository LINK a partire dal 21/03/2019?;get_smells_date
+community smells nella repo LINK a partire da questa data MM/DD/AAAA;get_smells_date
+Vorrei sapere quali sono i community smells presenti in questo repository LINK a partire dalla data MM/GG/AAAA.;get_smells_date
+Elenco dei community smells presenti in LINK a partire dal 03/03/2020.;get_smells_date
+Dal 23 giugno 2020, coomunity su LINK.;get_smells_date
+CADOCS, quali community smells sono presenti qui LINK al 03/07/2022?;get_smells_date
+Ciao, quali sono gli smells presenti nel repository LINK a partire dal 05/06/2017?;get_smells_date
+CADOCS, quali sono gli smells presenti nel repository LINK a partire dal 05/06/2022?;get_smells_date
+Hey CADOCS, puoi verificare se il repository di questo LINK presenta community smells a partire dal 01/05/2020, per favore?;get_smells_date
+CADOCS, puoi generare un report sull'ultima esecuzione?;report
+Potresti fornirmi un riassunto dell'ultima esecuzione?;report
+Ehi Cadocs, potresti descrivermi la tua ultima esecuzione?;report
+CADOCS, mostrami il report dell'ultima esecuzione.;report
+Ho bisogno di un report sulla tua ultima esecuzione, per favore.;report
+CADOCS, puoi darmi ulteriori informazioni sui community smells che riesci a rilevare?;info
+Cosa sono i community smells? Come posso saperne di più sui community smells? Cosa puoi fare per me?;info
+Cosa sono i community smells? Come posso ottenere ulteriori informazioni sui community smells? Cosa puoi fare per me?;info
+CADOCS, quali tipi di community smells riesci a rilevare?;info
+Che tipo di community smells riesci a rilevare?;info
+CADOCS, quali tipi di smells riesci a rilevare?;info
+Ciao CADOCS, mostrami i tipi di community smells che riesci a rilevare.;info
+Puoi fornirmi ulteriori dettagli sui community smells che riesci a rilevare e su quali aspetti si basano?;info
+CADOCS, quali community smells hai rilevato?;info
+Ciao CADOCS, puoi indicarmi quali community smells sono presenti nel repository LINK, per favore?;get_smells
+CADOCS può aiutarmi a identificare quali community smells sono presenti nel LINK?;get_smells
+CADOCS può dirmi quali community smells sono presenti nel LINK?;get_smells
+Vorrei conoscere tutti i community smells presenti in questo LINK.;get_smells
+Qual è la situazione dei community smells nel progetto LINK?;get_smells
+Dimmi quali community smells ci sono nel LINK.;get_smells
+CADOCS, puoi aiutarmi a individuare i community smells presenti nel progetto LINK, per favore?;get_smells
+CADOCS, puoi dirmi quali community smells sono presenti nel progetto LINK, per favore?;get_smells
+CADOCS, quali community smells sono presenti nel progetto LINK?;get_smells
+Hey CADOCS, puoi aiutarmi a trovare i community smells nel progetto LINK?;get_smells
+Hey CADOCS, puoi indicarmi quali community smells ci sono nel progetto LINK?;get_smells
+Ciao CADOCS, puoi spiegarmi cosa sono i community smells nel progetto LINK?;get_smells
+Ciao CADOCS, puoi dirmi che cosa sono community smells nel progetto LINK?;get_smells
+CADOCS, mostrami i community smells presenti nel repository LINK.;get_smells
+Vorrei capire perché i collaboratori di LINK non stanno funzionando bene.;get_smells
+Vorrei che tu capissi perché i collaboratori di LINK non funzionano correttamente.;get_smells
+CAD  community smells in questo LINK;get_smells
+CADOCS, puoi mostrarmi i community smells in questo LINK?;get_smells
+CADOCS, quali community smells sono presenti qui nel LINK?;get_smells
+Dimmi tutti i community smells in questo LINK.;get_smells
+Salve, quali sono tutti i community smells nel progetto LINK?;get_smells
+Hey CADOCS, puoi indicare i community smells presenti nel repository LINK per favore?;get_smells
+Hey CADOCS, come identifichi i community smells nel repository LINK?;get_smells
+Ciao, sei a conoscenza dei community smells come in LINK repo?;get_smells
+Hey CADOCS, quali sono tutti i community smells nel repository LINK?;get_smells
+Ciao CADOCS, puoi elencarmi i community smells presenti nel repository LINK per favore?;get_smells
+Ciao CADOCS, puoi indicare i community smells che sono presenti nel repository LINK per favore?;get_smells
+Ciao CADOCS, potresti verificare la presenza di community smells nel progetto LINK?;get_smells
+Ciao CADOCS, potresti verificare quali community smells sono presenti nel progetto LINK?;get_smells
+Ciao CADOCS, potresti controllare i community smells presenti nel progetto LINK?;get_smells
+Come si presentano i community smells nel progetto LINK?;get_smells
+Ciao CADOCS, puoi indicare i community smells presenti nel repository LINK a partire dal 21/03/2019?;get_smells_date
+Ciao CADOCS, puoi indicare i community smells nel repository LINK dopo il 21/03/2019?;get_smells_date
+CADOCS può aiutarmi a identificare i community smells nel repository LINK dopo il 01/16/2028?;get_smells_date
+CADOCS puoi indicare i community smells che sono presenti nel repository LINK dopo il 01/16/2028?;get_smells_date
+Vorrei conoscere quali community smells sono presenti nel repository LINK a partire dalla data MM/GG/AAAA.;get_smells_date
+CADOCS può aiutarmi a verificare i community smells in LINK a partire dal 18/04/2010?;get_smells_date
+Fammi sapere cosa il community smells in LINK indica.;get_smells_date
+Puoi elencare i community smells presenti nel REV LINK dopo il 30/03/2021?;get_smells_date
+Puoi indicare i community smells che sono presenti nel REV LINK dopo il 30/03/2021?;get_smells_date
+Hey CADOCS, puoi indicare i community smells che sono presenti nel repository LINK dopo il 04/12/2016?;get_smells_date
+Hey CADOCS, come posso sapere quali community smells sono presenti nel repository LINK dopo il 04/12/2016?;get_smells_date
+CADOCS, puoi aiutarmi a identificare i community smells presenti in questo repository LINK dopo il 05/01/2020?;get_smells_date
+CADOCS, puoi indicare i community smells presenti in questo repository LINK dopo il 05/01/2020?;get_smells_date
+CADOCS, puoi indicare i community smells che sono presenti in questo repository LINK dopo il 05/01/2020?;get_smells_date
+Ciao CADOCS, ci sono community smells nel progetto LINK a partire dall'11/11/2011?;get_smells_date
+Scopri tutti i community smells di questo LINK entro il 05/05/2021.;get_smells_date
+Ciao, quali sono tutti gli smells in questo repository LINK a partire dal 05/06/2017?;get_smells_date
+Ciao, desidero ottenere tutti i community smells nel progetto LINK dopo il 31/12/2000.;get_smells_date
+Puoi indicare i community smells presenti nel repository LINK prima del 23/03/2020?;get_smells_date
+Ciao, quali sono tutti i community smells nella data del progetto LINK 12/12/20? Grazie in anticipo.;get_smells_date
+Ho bisogno del numero di report per la tua ultima esecuzione, puoi fornirmelo?;report
+CADOCS, puoi generare un report della tua ultima esecuzione?;report
+Salve, potresti mostrarmi le informazioni sulla tua ultima esecuzione, per favore?;report
+Salve, potresti mostrarmi tutte le informazioni sulla tua ultima esecuzione, per favore?;report
+Mostrami un report della tua ultima esecuzione, per favore.;report
+Dammi il report della tua ultima esecuzione.;report
+CADOCS, mostrami le informazioni sulla tua ultima esecuzione.;report
+CADOCS, mostrami tutte le informazioni sulla tua ultima esecuzione.;report
+CADOCS, mostrami i risultati della tua ultima esecuzione.;report
+CADOCS, mostrami tutti i risultati della tua ultima esecuzione.;report
+CADOCS, mostrami i risultati della tua ultima esecuzione.;report
+Potresti riassumere cosa hai fatto l'ultima volta?;report
+Potresti darmi un riassunto di quello che hai fatto l'ultima volta?;report
+Potresti riassumere l'ultima esecuzione?;report
+Ciao CADOCS, per favore mostrami il report della tua ultima esecuzione.;report
+Ciao CADOCS, mostrami il report della tua ultima esecuzione.;report
+Forniscimi il report dell'ultima esecuzione.;report
+Hey CADOCS, report sull'ultima esecuzione.;report
+Salve, potrebbe mostrarmi le informazioni sulla sua ultima esecuzione.;report
+Ho bisogno di un resoconto della tua ultima esecuzione, per favore.;report
+Ciao CADOCS, forniscimi il report dell'ultima esecuzione.;report
+Hey CADOCS, ho bisogno di un report della tua ultima esecuzione, per favore.;report
+Salve, richiedo un report relativo al vostro ultimo compito in esecuzione. Grazie in anticipo.;report
+Puoi fornirmi un report sulla tua ultima esecuzione?;report
+CADOCS, quali tipi di community smells sei in grado di rilevare?;info
+Desidero maggiori informazioni sul processo di rilevamento dei community smells.;info
+Vorrei acquisire una maggiore comprensione del rilevamento dei community smells.;info
+Quali community smells puoi identificare?;info
+Cosa sai fare?;info
+Puoi fornirmi ulteriori informazioni sul rilevamento dei community smells?;info
+Puoi fornirmi ulteriori informazioni sui community smells che solo tu sei in grado di rilevare?;info
+Puoi fornirmi ulteriori informazioni sui community smells che puoi rilevare?;info
+Ehi! Quali sono i community smells rilevabili?;info
+Hey CADOCS, puoi darmi maggiori informazioni sui community smells rilevabili?;info
+Hey CADOCS, puoi fornirmi maggiori dettagli sui community smells rilevabili?;info
+CADOCS, quali tipi di community smells puoi rilevare?;info
+Cosa sono tutti questi community smells? Come posso trovare ulteriori informazioni su di loro? Cosa puoi fare per me?;info
+Cosa sono questi community smells? Come posso trovare ulteriori informazioni su di loro? Cosa puoi fare per me?;info
+Cosa sono questi community smells? Come posso ottenere maggiori informazioni su di loro? Cosa puoi fare per me?;info
+Cosa sono questi community smells? Come posso ottenere ulteriori informazioni su di loro? Cosa puoi fare per me?;info
+CAD desidera ulteriori informazioni sui community smells individuati.;info
+Quali tipi di community smells puoi identificare?;info
+Dimmi di più sui community smells.;info
+CADOCS, quali tipi di smells sei in grado di rilevare?;info
+Hey CADOCS, vorrei saperne di più sui community smells.;info
+Quali tipi di community smells puoi rilevare?;info
+Voglio saperne di più sui community smells, sembrano interessanti.;info
+Hey CADOCS, puoi mostrarmi alcune informazioni sui community smells che puoi rilevare?;info
+Hey CADOCS, puoi mostrarmi alcune informazioni sui community smells che sei in grado di rilevare?;info
+Hey CADOCS, puoi mostrarmi alcune informazioni sui community smells che solo tu sei in grado di rilevare?;info
+Puoi fornirmi ulteriori dettagli sui community smells e sulle relative note?;info
+Puoi darmi maggiori informazioni sui community smells e sulle relative note?;info
+Puoi dirmi di più sui community smells e sulle relative note?;info
