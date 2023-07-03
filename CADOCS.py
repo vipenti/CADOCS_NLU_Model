@@ -1,143 +1,105 @@
-import logging, json, warnings
+import torch
+from transformers import RobertaTokenizer, RobertaForSequenceClassification
+from langdetect import detect
 
-logging.basicConfig(level="INFO")
-warnings.filterwarnings('ignore')
-import os
-import pandas as pd
+import warnings
 
-from rasa_nlu.training_data import load_data
-from rasa_nlu.model import Trainer, Interpreter
-from rasa_nlu import config
+warnings.filterwarnings("ignore", category=FutureWarning)
 
-# Path were the dataset is stored
-DATASET_PATH = "dataset.csv"
-# Path were the project is located
-PROJECT_PATH = os.getcwd()
-# Creation of the DataFrame containing the dataset
-df = pd.read_csv(DATASET_PATH, sep=";", header=None)
+tokenizer = RobertaTokenizer.from_pretrained(
+    'roberta-base', do_lower_case=True)
+
+model_ita = RobertaForSequenceClassification.from_pretrained(
+    'alfcan/CADOCS_NLU_ita')
+model_eng = RobertaForSequenceClassification.from_pretrained(
+    'alfcan/CADOCS_NLU_eng')
 
 
-# Function that indents the printing of a JSON object
-def pprint(o):
-    print(json.dumps(o, indent=2))
+def get_prediction(model, request):
+    # Encode the request using the tokenizer
+    request_ids = tokenizer.encode_plus(
+        request,
+        add_special_tokens=True,
+        max_length=32,
+        pad_to_max_length=True,
+        return_attention_mask=True,
+        return_tensors='pt'
+    )
+
+    input_ids = torch.clone(request_ids['input_ids'])
+
+    # Make the prediction using the model
+    with torch.no_grad():
+        output = model(input_ids)
+
+    predictions = torch.softmax(output.logits, dim=1)
+
+    # Get the top-k predicted classes and confidences
+    confidence, predicted_class = torch.topk(predictions, k=4)
+
+    confidence = confidence.detach().cpu().numpy().flatten()
+    predicted_class = predicted_class.detach().cpu().numpy().flatten()
+
+    # Map class indices to class labels
+    class_mapping = {0: 'get_smells',
+                     1: 'get_smells_date', 2: 'report', 3: 'info'}
+
+    # Create a dictionary mapping class indices to class labels and confidences
+    class_confidence = {class_mapping[class_idx]: conf for class_idx, conf in zip(
+        predicted_class, confidence)}
+
+    # Format of the response
+    output_dict = {
+        "intent": {
+            "name": class_mapping[predicted_class[0]],
+            "confidence": confidence[0].item()
+        },
+        "entities": [],
+        "intent_ranking":
+        [{"name": class_label, "confidence": class_confidence.item()}
+            for class_label, class_confidence in class_confidence.items()]
+    }
+
+    return output_dict
 
 
-# This class represents the logic of the ML model
-class CADOCSModel:
-    # Defines the number of the dataset updates required to perform a re-train of the model
-    TO_RETRAIN = 10
-    # Number of updates performed. It resets when it reaches the value specified by TO_RETRAIN
-    UPDATE_COUNT = 0
-
-    # Created an MarkDown file containing the training data
-    def create_training_data_md(self):
-
-        int1 = []
-        int2 = []
-        int3 = []
-        int4 = []
-
-        for row in df.iterrows():
-            if row[1][1] == "get_smells":
-                int1.append(row[1][0])
-            if row[1][1] == "get_smells_date":
-                int2.append(row[1][0])
-            if row[1][1] == "report":
-                int3.append(row[1][0])
-            if row[1][1] == "info":
-                int4.append(row[1][0])
-
-        with open(os.path.join(PROJECT_PATH, "nlu.md"), "wt", encoding="utf-8") as f:
-            f.write("## intent: get_smells\n")
-            for q in int1:
-                f.write(f"- {q}\n")
-            f.write("## intent: get_smells_date\n")
-            for q in int2:
-                f.write(f"- {q}\n")
-            f.write("## intent: report\n")
-            for q in int3:
-                f.write(f"- {q}\n")
-            f.write("## intent: info\n")
-            for q in int4:
-                f.write(f"- {q}\n")
-
-    '''# Created an MarkDown file containing the testing data
-    def create_test_data_md(self):
-        qs1 = df[2][27:]
-        qs2 = df[3][27:]
-        qs3 = df[4][27:]
-        qs4 = df[5][27:]
-        with open(os.path.join(PROJECT_PATH, "nlu_test.md"), "wt", encoding="utf-8") as f:
-            f.write("## intent: get_smells\n")
-            for q in qs1:
-                f.write(f"- {q}\n")
-            f.write("## intent: get_smells_date\n")
-            for q in qs2:
-                f.write(f"- {q}\n")
-            f.write("## intent: report\n")
-            for q in qs3:
-                f.write(f"- {q}\n")
-            f.write("## intent: info\n")
-            for q in qs4:
-                f.write(f"- {q}\n")
-    '''
-    # This function it is where the training of the model takes place
-    def train_model(self):
-        # It creates the training and the testing data from the dataset
-        self.create_training_data_md()
-        # self.create_test_data_md()
-        print("MD files created")
-
-        training_data = load_data(os.path.join(PROJECT_PATH, "nlu.md"))
-
-        # A Trainer object is created and the model is trained
-        trainer = Trainer(config.load(os.path.join(PROJECT_PATH, "config.yml")))
-
-        print("Starting training...")
-        trainer.train(training_data)
-
-        # The model is saved and stored in the specified path, so it can be used again in the future
-        print("Storing...")
-        trainer.persist(PROJECT_PATH, fixed_model_name="current")
-        print("Stored!")
-
-    # This function uses the generated model to make predictions on a given message
-    # The message is the sentence of the user from which you want to extract the intent
+# Defining the interface of the strategy pattern
+class LanguageModel:
     def give_prediction(self, message):
-        # An interpreter is created and it's used to load the pre-trained model
-        print("Loading interpreter...")
-        interpreter = Interpreter.load(model_dir="default/current")
-
-        # The interpreter parses the message and causes the model to provide its prediction
-        return interpreter.parse(message)
-
-    # This function updates the existing dataset
-    # When new question are asked to the Conversational Agent and a correct prediction is provided, that entry is added to the dataset
-    # After a number of updates specified by TO_RETRAIN has been performed, Active Learning is performed
-    def update_dataset(self, message, intent):
-
-        df = pd.read_csv(DATASET_PATH, sep=";", header=None)
-        # A new row for the dataset is created with the given message and intent
-        new_row = {0: [message],
-                  1: [intent]}
-        df_tmp = pd.DataFrame(new_row)
-
-        # The new row is added to the existing dataset
-        df = df.append(df_tmp)
-        pd.DataFrame(df).to_csv(os.path.join(PROJECT_PATH, "dataset.csv"), sep=";", header=None, index=False)
-
-        # Since an updated has been performed, the counter is increased
-        self.UPDATE_COUNT += 1
-
-        # This is where the Active Learning is performed
-        # When the value of TO_RETRAIN is equal to the UPDATE_COUNT one, the latter is reset and the model is trained again
-        if (self.TO_RETRAIN == self.UPDATE_COUNT):
-            self.UPDATE_COUNT = 0
-            self.train_model()
-        return
+        pass
 
 
-if __name__ == "__main__":
-    model = CADOCSModel()
-    res = model.give_prediction("hello CADOCS, show me the community smells in the repository https://github.com/tensorflow/ranking from 21/05/2020")
-    print(res)
+# Implementation of the strategy pattern for the Italian model
+class ItalianModel(LanguageModel):
+    def give_prediction(self, message):
+        pred = get_prediction(model_ita, message)
+        print('IT')
+
+        return pred
+
+
+# Implementation of the strategy pattern for the English model
+class EnglishModel(LanguageModel):
+    def give_prediction(self, message):
+        pred = get_prediction(model_eng, message)
+        print('EN')
+
+        return pred
+
+
+# Implementation of the strategy pattern for the PredictionService
+class PredictionService:
+    def predict(self, message):
+        if self._is_italian(message):
+            self.language_model = ItalianModel()
+        else:
+            self.language_model = EnglishModel()
+
+        return self.language_model.give_prediction(message)
+
+    def _is_italian(self, message):
+        try:
+            lang = detect(message)
+            return lang == 'it'
+        except:
+            return False
