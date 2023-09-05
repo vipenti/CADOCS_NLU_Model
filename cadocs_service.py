@@ -1,12 +1,12 @@
 import re
 import flask
-import CADOCS
+from prediction_service import PredictionService
 import json
 from flask import request
 
 app = flask.Flask(__name__)
 
-prediction_service = CADOCS.PredictionService()
+prediction_service = PredictionService()
 
 
 @app.route('/predict', methods=['GET'])
