@@ -1,11 +1,13 @@
 import re
 import flask
-import CADOCS
+from prediction_service import PredictionService
 import json
 from flask import request
 
 app = flask.Flask(__name__)
-model = CADOCS.CADOCSModel()
+
+prediction_service = PredictionService()
+
 
 @app.route('/predict', methods=['GET'])
 def predict():
@@ -18,35 +20,22 @@ def predict():
     re_equ = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
     ck_url = re.findall(re_equ, message)
     entities = {
-        "url":"",
-        "date":""
+        "url": "",
+        "date": ""
     }
     if ck_url:
-        entities.update({"url":[i[0] for i in ck_url][0]})
+        entities.update({"url": [i[0] for i in ck_url][0]})
         message = message.replace([i[0] for i in ck_url][0], "LINK")
-    date = re.findall('\d{2}/\d{2}/\d{4}', message)
+    re_date = r"((0[1-9]|1[0-2])[\/\.-](0[1-9]|[12][0-9]|3[01])[\/\.-](\d{4}))"
+    date = re.findall(re_date, message)
     if date:
-        entities.update({"date":date[0]})
-    result = {"intent": model.give_prediction(message), "entities": entities}
+        date_reformatted = re.sub(r"[-.]", "/", date[0][0])
+        entities.update({"date": date_reformatted})
+
+    result = {"intent": prediction_service.predict(
+        message), "entities": entities}
 
     return json.dumps(result)
 
-# Gets a new message with the corresponding intent, and add it as a new row to the existing dataset
-# If enough items have been added, the model re-trains
-@app.route('/update_dataset', methods=['GET'])
-def update_dataset():
-    if 'message' in request.args and 'intent' in request.args:
-        message = str(request.args['message'])
-        intent = str(request.args['intent'])
-    else:
-        return "Error: The past message or intent is incorrect. Please provide the right parameters."
-
-    re_equ = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
-    ck_url = re.findall(re_equ, message)
-    if ck_url:
-        message = message.replace([i[0] for i in ck_url][0], "LINK")
-    model.update_dataset(message, intent)
-
-    return json.dumps({"ok":True})
 
 app.run()

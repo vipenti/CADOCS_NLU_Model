@@ -1,0 +1,4 @@
+Flask==2.3.2
+langdetect==1.0.9
+torch==2.0.1
+transformers==4.30.2
